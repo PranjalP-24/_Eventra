@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eventra - Vendor Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sidebar { min-height: 100vh; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Eventra - Vendor</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navVendor" aria-controls="navVendor" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <aside class="col-md-3 col-lg-2 bg-light p-3 sidebar border-end">
+      <div class="mb-3">
+        <strong>Vendor</strong><br/>
+        Your business name
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link active" href="#dashboard">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bookings">Bookings</a></li>
+        <li class="nav-item"><a class="nav-link" href="#payments">Payments</a></li>
+      </ul>
+    </aside>
+
+    <main class="col-md-9 col-lg-10 p-4">
+      <h2 id="dashboard" class="mb-3">Dashboard</h2>
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h6>Total Bookings</h6>
+            <p class="h4 mb-0">12</p>
+            <small class="text-muted">This month</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h6>Pending Payout</h6>
+            <p class="h4 mb-0">₹6,000</p>
+            <small class="text-muted">Awaiting processing</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h6>Reviews</h6>
+            <p class="h4 mb-0">45</p>
+            <small class="text-muted">rating average 4.8</small>
+          </div>
+        </div>
+      </div>
+
+      <section id="profile" class="mb-4">
+        <h4>Profile</h4>
+        <form class="row g-3 mt-2">
+          <div class="col-md-6">
+            <input class="form-control" placeholder="Vendor name" value="Apex Photography">
+          </div>
+          <div class="col-md-6">
+            <input class="form-control" placeholder="Location" value="Patna">
+          </div>
+          <div class="col-md-6">
+            <input class="form-control" placeholder="Phone" value="98765-43210">
+          </div>
+          <div class="col-md-6">
+            <input class="form-control" placeholder="Email" value="example@vendor.com">
+          </div>
+          <div class="col-md-12">
+            <button class="btn btn-primary" type="button">Save changes</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="bookings" class="mb-4">
+        <h4>Bookings (dummy)</h4>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Booking #001 - 12/12/2025
+            <span class="badge bg-primary rounded-pill">Paid</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Booking #002 - 20/12/2025
+            <span class="badge bg-warning text-dark rounded-pill">Pending</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="payments">
+        <h4>Payments</h4>
+        <p>Commission & payout status (mock).</p>
+        <div class="card p-3">
+          <p class="mb-1">Total earnings: ₹1,20,000</p>
+          <p class="mb-1">Pending payout: ₹20,000</p>
+          <button class="btn btn-outline-success" type="button">Process payout (mock)</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
